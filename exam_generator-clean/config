@@ -7,3 +7,6 @@
 [remote "origin"]
 	url = https://github.com/Lusis67/exam_generator.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
