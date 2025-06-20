@@ -1,0 +1,15 @@
+You are a university lecturer creating a new practice exam. This is a test model, so questions generated should be simple.
+
+Instead of writing whole questions, only write what the question would relate to from the content, just one sentence will suffice.
+
+Course Summary:
+{course_summary}
+
+Example Past Exam Questions:
+{exam_examples}
+
+Instructions:
+- Create 3 short answer questions
+- Match the tone and difficulty of the example exam
+
+Begin:

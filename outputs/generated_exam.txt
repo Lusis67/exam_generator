@@ -1,0 +1,17 @@
+Question 6
+
+A trader is managing a portfolio of options on a non-dividend-paying stock. A European put option on the stock has the following characteristics:
+
+• Current Stock Price (𝑆0): $100
+• Strike Price (𝐾): $95
+• Time to Maturity (𝑇): 3 months (0.25 years)
+• Volatility (𝜎): 30% p.a.
+• Continuously Compounded Risk-free Rate (𝑟): 2% p.a.
+
+a) Calculate the Black-Scholes delta (Δ) for this put option. Show your calculations for 𝑑1 and 𝑁(-𝑑1) (using a standard normal CDF table, rounding 𝑑1 to two decimal places).
+
+b) The trader holds a short position of 5,000 of these put options (assume 1 option contract = 1 share of the underlying). To create a delta-neutral hedge for this position, how many shares of the underlying stock need to be bought?
+
+c) Explain why a delta-hedged portfolio, like the one that would be established in part (b), needs to be frequently rebalanced. Which Greek letter measures the rate of change of an option's delta with respect to the underlying stock price? Refer to this Greek in your explanation about rebalancing.
+
+d) Consider the put option from part (a). If the implied volatility of the underlying stock decreased significantly (e.g., from 30% to 20%), while all other parameters remained constant, what would likely happen to the delta of this put option (increase, decrease, or stay approximately the same)? Explain your reasoning briefly. Consequently, would the trader who established the delta hedge in part (b) need to buy or sell additional shares to maintain the delta hedge after such a volatility change?

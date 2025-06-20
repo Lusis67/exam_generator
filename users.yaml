@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    alice:
+      name: Alice
+      password: $2b$12$jgidNFeSrmQRnyOniLxnw.zmhBnPweb/nKZxXahEvA9SIfYRQqrSO
+    bob:
+      name: Bob
+      password: $2b$12$uSkceMwcopWaa4XTbwu7z.YJliDH.7HpDZbwGynf9lvwvrvTg.iyG
+cookie:
+  expiry_days: 1
+  key: 87c1df86686109a0fe8d33ebd56155ed2f34a37c1649f6ae8927f37a22315be0
+  name: exambot_auth
+preauthorized:
+  emails: []      
