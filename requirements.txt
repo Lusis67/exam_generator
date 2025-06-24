@@ -5,3 +5,4 @@ langchain
 langchain-openai
 chroma
 pypdf
+python-dotenv
