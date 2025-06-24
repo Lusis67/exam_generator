@@ -1,3 +1,10 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Loads variables from .env
+
+openai_api_key = os.getenv("OPENAI_API_KEY")
+
 import streamlit as st
 import streamlit_authenticator as stauth
 import yaml
@@ -16,16 +23,20 @@ authenticator = stauth.Authenticate(
 )
 st.write("DEBUG: Authenticator initialized")
 
-login_result = authenticator.login(location="main")
-if login_result is None:
-    st.warning("Please enter your username and password")
-    st.stop()
-name, authentication_status, username = login_result
+login_result = authenticator.login('main')
+st.write("DEBUG: login_result =", login_result)
+# Defensive unpacking
+if isinstance(login_result, tuple) and len(login_result) == 3:
+    name, authentication_status, username = login_result
+else:
+    name = username = None
+    authentication_status = login_result
 st.write("DEBUG: authentication_status =", authentication_status)
+st.write("DEBUG: authentication_status type =", type(authentication_status)) 
 st.write("DEBUG: name =", name)
 st.write("DEBUG: username =", username)
 
-if authentication_status:
+if authentication_status is True:
     st.success(f"Welcome, {name}!")
     st.sidebar.success(f"Logged in as {name} ({username})")
     course_path = course_sidebar()
